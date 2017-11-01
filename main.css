@@ -1,0 +1,15 @@
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.tablecenter {
+	margin: auto;
+	border: 1px solid grey; 
+	padding: 20px;
+}
+header {
+	text-align: right;
+	background-color: ;
+}

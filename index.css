@@ -1,0 +1,47 @@
+body {
+	background-color: #384C7E;
+}
+.bodypage {
+	padding: 50px;
+	margin: 10px 150px;
+	border: 1px solid black;
+	background-color: #203466;
+
+}
+.padheader {
+	float: right;
+	padding: 10px;
+
+}
+.header {
+	border: 1px solid grey; 
+	overflow: auto;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.titulo {
+	font-size: 36px;
+	font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+	padding: 30px;
+}
+
+.registro {
+	width: 40%;
+}
+
+.fix {
+	float: right;
+	width: 45%;
+}
+
+.pad {
+	padding: 20px;
+	margin: 5px;
+}
+
+.img {
+	width: 200px;
+	height: 100px;
+}

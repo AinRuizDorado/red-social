@@ -1,0 +1,13 @@
+<?php
+	if(empty($_POST['nombre']) || empty($_POST['mensaje'])){
+    echo "Usuario o Mensaje incorrectos intentelo nuevamente";
+
+}else{
+	session_start();
+	echo"exito";
+	$postear = 'postear.txt';
+	$datos = $_POST['nombre'].'#'.$_POST['mensaje'].'@';
+	$_SESSION['nombre'] = $_POST['nombre'];
+	file_put_contents($postear, $datos, FILE_APPEND);
+}
+?>
