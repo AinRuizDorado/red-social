@@ -8,15 +8,24 @@
 <header>
 
 </header>
-<div class="bodypage">
+<div class="main">
  	<div>
 
-		<div class="center">
+		<div class="supheader">
 			<div>
-				Posts place
+				Logo
 			</div>
+			<div class="logout">Bienvenido <a href="logout.php">session destroy</a></div>
 		</div>
 
+	</div>
+	<div>
+		<div class="centerpost">
+			<div class="spamtable">
+				<span> <a href="">Post</a></span> <span> <a href="">fotos</a></span>
+			</div>
+			<div class="post"> lorem</div>
+		</div>
 	</div>
 
 <?php

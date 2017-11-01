@@ -1,5 +1,6 @@
 body {
 	background-color: #384C7E;
+	margin: 0 0 0 0;
 }
 .bodypage {
 	padding: 50px;
@@ -14,8 +15,6 @@ body {
 
 }
 .header {
-	border: 1px solid grey; 
-	overflow: auto;
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	-moz-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 8px 6px -6px black;
@@ -42,6 +41,6 @@ body {
 }
 
 .img {
-	width: 200px;
-	height: 100px;
+	width: 250px;
+	height: 50px;
 }

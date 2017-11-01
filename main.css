@@ -1,15 +1,49 @@
+.supheader {
+	box-shadow: 0 8px 6px -6px black;
+	overflow: auto;
+	margin-bottom: 20px;
+	background-color: #384C7E;
+}
 .center {
     margin: auto;
     width: 50%;
     border: 3px solid green;
     padding: 10px;
+    margin-bottom: 30px;
 }
 .tablecenter {
 	margin: auto;
 	border: 1px solid grey; 
 	padding: 20px;
 }
+.centerpost {
+	border: 1px solid red;
+	margin: auto;
+	width: 50%
+}
 header {
 	text-align: right;
 	background-color: ;
+}
+span {
+	overflow: auto;
+	padding: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+a {
+	color: #1B95E0 ;
+}
+
+.logout{
+	float: right;
+}
+.main {
+	width: 100%;
+}
+
+body {
+	margin: 0 0 0 0;
 }
