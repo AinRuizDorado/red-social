@@ -30,7 +30,10 @@
 			<div class="spamtable">
 				<span> <a href="">Post</a></span> <span> <a href="">fotos</a></span>
 			</div>
-			<div class="post"> lorem</div>
+			<div class="container">
+				<div class="foto">foto</div>
+				<div class="contenido">post aqui</div>
+			</div>
 		</div>
 	</div>
 
