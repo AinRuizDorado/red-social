@@ -15,7 +15,13 @@
 			<div>
 				Logo
 			</div>
-			<div class="logout">Bienvenido <a href="logout.php">session destroy</a></div>
+			<?php 
+				session_start();
+				
+				echo '<div class="logout">Bienvenido '.$_SESSION["usuario"];
+				echo '<a href="logout.php"> Log out</a> </div>';
+			 ?>
+			
 		</div>
 
 	</div>
