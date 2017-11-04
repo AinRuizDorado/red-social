@@ -34,6 +34,11 @@ html {
 	flex-wrap: wrap;
 	padding: 20px;
 }
+.containerheader{
+	border: 1px solid grey;
+	background-color: cyan;
+	padding: 10px;
+}
 .contenido {
 	display: flex;
 	width: 80px;
@@ -47,7 +52,7 @@ html {
 }
 header {
 	text-align: right;
-	background-color: ;
+	background-color: grey;
 }
 span {
 	overflow: auto;
@@ -76,4 +81,12 @@ body {
 .spamtable{
 	border-bottom: 1px solid grey;
 }
-
+textarea { 
+	/* will prevent resizing */
+	resize: none;
+	
+ }
+ .prueba {
+	
+	padding: 30px;
+ }
