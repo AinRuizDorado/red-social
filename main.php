@@ -41,9 +41,9 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 				<span> <a href="">Post</a></span> <span> <a href="">fotos</a></span>
 			</div>
 			<div class="containerheader">
-				<form action="post.php" method="post">
+				<form action="post.php" method="post" name="formPost" onsubmit="isvalidPost()">
 					<textarea name="mensaje" cols="57" rows="10" placeholder="asd"></textarea>
-					<input type="Submit" value="post" class="prueba">
+					<input type="Submit" value="post" class="prueba" >
 				</form>
 			</div>
 			<div class="container">

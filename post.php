@@ -2,7 +2,6 @@
 	if(empty($_POST["mensaje"])){
 	echo "Mensaje incorrecto intentelo nuevamente";
 	header('Location: main.php');
-
 }else{
 	sleep(4);
 	header('Location: main.php');
