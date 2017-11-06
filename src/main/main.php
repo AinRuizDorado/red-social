@@ -50,16 +50,13 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 			<?php
 				$postear = file_get_contents('../post/postear.txt');
 				$post = explode("#", $postear);
-				print_r($post);
-
-				
 
 					foreach ($post as $postear) {
 						$post = explode("#", $postear);
 	
                         echo '<div class="container">';
                         echo '<div class="foto">foto</div>';
-                        echo '<div class="contenido">'.$post[0].'</div>';
+                        echo '<div class="contenido"> <textarea readonly class="transparent" name="" id="" cols="65" rows="5">'.$post[0].'..</textarea></div>';
                         echo '</div>';
                         
                     }
