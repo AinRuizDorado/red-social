@@ -7,15 +7,23 @@ la idea tambien seria que si algun campo este mal, javascript ponga display BLOC
 todo esto, en el html tenes que ponerlo en un tag <script> </script>
 podes probar si funciona poniendo simplemente un alert("hola");  */
 
-function isvalidPost()
-{
-    var a=document.forms["formPost"]["mensaje"].value;
-    if (a==null || a==='')
-    {
+function isvalidPost() {
+    var a = document.forms["formPost"]["mensaje"].value;
+    if (a == null || a === '') {
         alert("Por favor llena los campos vacios");
         return false;
-    }else{
+    } else {
         return true;
     }
 
+}
+
+function textCounter(field, field2, maxlimit) {
+    var countfield = document.getElementById(field2);
+    if (field.value.length > maxlimit) {
+        field.value = field.value.substring(0, maxlimit);
+        return false;
+    } else {
+        countfield.value = maxlimit - field.value.length;
+    }
 }

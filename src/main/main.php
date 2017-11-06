@@ -42,10 +42,29 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 			</div>
 			<div class="containerheader">
 				<form action="../post/post.php" method="post" name="formPost" onsubmit="isvalidPost()">
-					<textarea name="mensaje" cols="57" rows="10" placeholder="asd"></textarea>
-					<input type="Submit" value="post" class="prueba" >
+					<textarea name="mensaje" cols="65" rows="5" placeholder="asd" maxlength="140" onkeyup="textCounter(this,'counter',140);" id="message"></textarea>
+                    <input type="Submit" value="post" class="boton" > 
+                    <input disabled class="botonlength"  maxlength="140" size="3" value="140" id="counter">
 				</form>
-			</div>
+		    </div>
+			<?php
+				$postear = file_get_contents('../post/postear.txt');
+				$post = explode("#", $postear);
+				print_r($post);
+
+				
+
+					foreach ($post as $postear) {
+						$post = explode("#", $postear);
+	
+                        echo '<div class="container">';
+                        echo '<div class="foto">foto</div>';
+                        echo '<div class="contenido">'.$post[0].'</div>';
+                        echo '</div>';
+                        
+                    }
+                   
+            ?>
 			<div class="container">
 				<div class="foto">foto</div>
 				<div class="contenido">post aqui</div>
@@ -53,29 +72,9 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 		</div>
 	</div>
 
-<?php
-$postear = file_get_contents('postear.txt');
 
-$post = explode('@', $postear);
-print_r($post);
-/* 	echo "<table class=tablecenter> ";
-
-foreach ($post as $postear) {
-	$post = explode("#", $postear);
-	echo "<br>";
-	echo "<br>";
-	echo "<br>";
-	echo "<br>";
-	echo "<br>";
-	echo "<tr>";
-	/* echo "<td>"."Usuario:".$post[1]."<br>"." Mensaje= ".$post[0]."</td>"; */
-/* 	echo "</tr>";
-	
-}
-echo "</table>"; */
-?>
 </div>
 
 </body>
 </body>
-</html>
+</html> 

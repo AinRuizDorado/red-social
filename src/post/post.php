@@ -4,7 +4,7 @@
 	header('Location: main.php');
 }else{
 	sleep(4);
-	header('Location: main.php');
+	header('Location: ../main/main.php');
 	$postear = 'postear.txt';
 	$datos = $_POST["mensaje"].'#';
 	file_put_contents($postear, $datos, FILE_APPEND);

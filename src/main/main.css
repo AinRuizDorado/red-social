@@ -6,6 +6,10 @@ html {
 	justify-content: center;
 	align-items: center;
 }
+.main {
+	width: 100%;
+	background-color: #2E2E73;
+}
 .supheader {
 	box-shadow: 0 8px 6px -6px black;
 	overflow: auto;
@@ -33,17 +37,18 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px;
+	background-color: #7676AD;
 }
 .containerheader{
 	border: 1px solid grey;
-	background-color: cyan;
+	background-color: #4C4C8F;
 	padding: 10px;
 }
 .contenido {
 	display: flex;
 	width: 80px;
 	border: 1px solid red;
-	
+	display: flex;
 }
 
 .foto{
@@ -70,9 +75,7 @@ a {
 	float: right;
 	font-size: 20px;
 }
-.main {
-	width: 100%;
-}
+
 
 body {
 	margin: 0 0 0 0;
@@ -86,7 +89,23 @@ textarea {
 	resize: none;
 	
  }
- .prueba {
+ .boton {
+	margin: 0 0 0 80%;
+	display: flex;
+	padding: 0 10px 0 12%;
+	text-align: center;
+	background-color: transparent;
+	border-style: solid;
+    
 	
-	padding: 30px;
+ }
+ .botonlength {
+	margin: 0 0 0 80%;
+	display: flex;
+	width: 20%;
+	padding: 5px;
+	text-align: center;
+	color: black;
+	background-color: transparent;
+	
  }
