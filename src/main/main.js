@@ -10,7 +10,7 @@ podes probar si funciona poniendo simplemente un alert("hola");  */
 function isvalidPost() {
     var a = document.forms["formPost"]["mensaje"].value;
     if (a == null || a === '') {
-        alert("Por favor llena los campos vacios");
+        document.getElementById("isEmply").innerHTML = "Alguno de los campos estan vacios";
         return false;
     } else {
         return true;

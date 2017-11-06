@@ -36,6 +36,6 @@
 }
 ?>
 <br>
-<a href="index.php">Volver al inicio</a>
+<a href="../index/index.php">Volver al inicio</a>
 </body>
 </html>

@@ -10,6 +10,7 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 <html>
 <head>
 	<LINK REL=StyleSheet HREF="index.css" TYPE="text/css">
+	<LINK REL=StyleSheet HREF="../bootstrap/css/bootstrap.css" TYPE="text/css">
 	<script src="index.js">
 	</script>
 
@@ -23,8 +24,11 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 			<form name="formPost" onsubmit="return isvalidLog()" action="../log/login.php" method="post" >
  				Usuario: <input type="text" name="usuario">
 				Contraseña: <input type="password" name="pw">
-	  		<input type="Submit" value=" ¡Logearse! ">
+				
+			  <input type="Submit" value=" ¡Logearse! ">
+			  <div  id="isEmply"></div>
 			</form>		
+		
 		</div>
 	</div>
 	<div>
@@ -33,10 +37,11 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 				Crea una cuenta
 			</div>
 			<div class="registro">
-				<form name="formPost" onsubmit="return isvalidLog()" action="../log/registro.php" method="post" >
+				<form name="formPost" onsubmit="return isvalidReg()" action="../log/registro.php" method="post" >
  					<input type="text" name="usuario" placeholder="Usuario" class="pad">
 					<input class="pad" type="password" name="pw" placeholder="Contraseña">
-		  			<input class="pad" type="Submit" value=" ¡Terminado! ">
+					  <input class="pad" type="Submit" value=" ¡Terminado! ">
+					  <div id="isEmply2"></div>
 				</form>	
 			</div>
 		</div>

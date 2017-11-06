@@ -75,6 +75,7 @@ a {
 .logout{
 	float: right;
 	font-size: 20px;
+	padding-right: 10px;
 }
 
 
@@ -90,14 +91,10 @@ textarea {
 	resize: none;
 	
  }
- .boton {
+ #boton {
 	margin: 0 0 0 80%;
 	display: flex;
-	padding: 0 10px 0 12%;
-	text-align: center;
-	background-color: transparent;
-	border: 5px dotted;
-    
+	padding: 0 32px 0 32px;
 	
  }
  .botonlength {

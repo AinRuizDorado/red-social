@@ -9,8 +9,8 @@
 	
 <?php
 	function mirror_user($user,$pass){
-		$usuarios = file_get_contents('usuarios.txt');
-		$mirror = explode('@', $usuarios);
+		$JSON = file_get_contents('usuarios.JSON');
+		
 		foreach ($mirror as $usuario) {
 			$parte = explode("#", $usuario);
 			if ($user == $parte[0] && $pass == $parte[1]) {
