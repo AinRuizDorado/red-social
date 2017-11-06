@@ -6,10 +6,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<div>
-	<div class="header"><img src="images/logo.png" alt="imagen logo" class="img">
+<div class="bg">
+	<div class="header"><img src="../../images/logo.png" alt="imagen logo" class="img">
 		<div class="padheader">	
-			<form action="login.php" method="post">
+			<form action="../log/login.php" method="post" onsubmit="isvalidLog()">
  				Usuario: <input type="text" name="usuario">
 				Contraseña: <input type="password" name="pw">
 	  		<input type="Submit" value=" ¡Logearse! ">
@@ -22,7 +22,7 @@
 				Crea una cuenta
 			</div>
 			<div class="registro">
-				<form action="registro.php" method="post">
+				<form action="../log/registro.php" method="post" onsubmit="isvalidLog()">
  					<input type="text" name="usuario" placeholder="Usuario" class="pad">
 					<input class="pad" type="password" name="pw" placeholder="Contraseña">
 		  			<input class="pad" type="Submit" value=" ¡Terminado! ">
