@@ -10,7 +10,7 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 <html>
 <head>
     <LINK REL=StyleSheet HREF="main.css" TYPE="text/css">
-    <LINK REL=StyleSheet HREF="../bootstrap/css/bootstrap.css" TYPE="text/css">
+    <LINK REL=StyleSheet HREF="css/bootstrap/css/bootstrap.css" TYPE="text/css">
 	<script src="main.js"></script>
 	<title>Red Social</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -30,7 +30,7 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 				session_start();
 				
 				echo '<div class="logout">Bienvenido '.$_SESSION["usuario"];
-				echo '<a href="../log/logout.php"> Log out</a> </div>';
+				echo '<a href="logout.php"> Log out</a> </div>';
 			 ?>
 			
 		</div>
@@ -42,7 +42,7 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 				<span> <a href="">Post</a></span> <span> <a href="">fotos</a></span>
 			</div>
 			<div class="containerheader">
-				<form action="../post/post.php" method="post" name="formPost" onsubmit="return isvalidPost()">
+				<form action="post.php" method="post" name="formPost" onsubmit="return isvalidPost()">
 					<textarea name="mensaje" cols="65" rows="5" placeholder="Post Here" maxlength="140" onkeyup="textCounter(this,'counter',140);" id="message"></textarea>
                     <input type="Submit" value="post" class="btn btn-primary"  id="boton"> 
                     <input disabled class="botonlength"  maxlength="140" size="3" value="140" id="counter">

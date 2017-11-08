@@ -29,7 +29,7 @@
 					# guardado de variables a la sesion global
 					$_SESSION['usuario'] = $_POST['usuario'];
 	
-					header('Location: ../main/main.php');
+					header('Location: main.php');
 					
 					}
 ?>
