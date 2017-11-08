@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<LINK REL=StyleSheet HREF="index.css" TYPE="text/css">
+	{$css}
 	<LINK REL=StyleSheet HREF="css/bootstrap/css/bootstrap.css" TYPE="text/css">
-	<script src="index.js">
+	<script src="js/index.js">
 	</script>
 
 	<title>Red Social</title>
