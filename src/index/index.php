@@ -37,7 +37,7 @@ podes probar si funciona poniendo simplemente un alert("hola"); -->
 				Crea una cuenta
 			</div>
 			<div class="registro">
-				<form name="formPost" onsubmit="return isvalidReg()" action="../log/registro.php" method="post" >
+				<form name="formPost"  action="../log/registro.php" method="post" >
  					<input type="text" name="usuario" placeholder="Usuario" class="pad">
 					<input class="pad" type="password" name="pw" placeholder="Contraseña">
 					  <input class="pad" type="Submit" value=" ¡Terminado! ">

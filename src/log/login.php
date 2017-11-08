@@ -9,11 +9,10 @@
 	
 <?php
 	function mirror_user($user,$pass){
-		$JSON = file_get_contents('usuarios.JSON');
-		
-		foreach ($mirror as $usuario) {
-			$parte = explode("#", $usuario);
-			if ($user == $parte[0] && $pass == $parte[1]) {
+		$json = file_get_contents('usuarios.JSON');
+		$mydata = json_decode($json,true);
+		foreach ($mydata as $usuario) {
+			if ($usuario['usuario'] == $user  && $usuario['pw'] == $pass) {
 				return true;	
 			}
 		}
