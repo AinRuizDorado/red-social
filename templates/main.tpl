@@ -7,12 +7,14 @@
             <div>
                 Logo
             </div>
+            {if !empty($smarty.session.usuario)}
+            <div class="logout">Bienvenido {$smarty.session.usuario}
+            <a href="logout.php"> Log out</a>
+            </div>
+            {/if}
         </div>
-        {if !empty($smarty.session.usuario)}
-        <div class="logout">Bienvenido {$smarty.session.usuario};
-        <a href="logout.php"> Log out</a> </div>
+  
 
-        {/if}
     </div>
     <div>
         <div class="centerpost">
@@ -33,6 +35,12 @@
                     <div id="isEmply"></div>
                 </form>
             </div>
+            {foreach $posteos as $post}
+            <div class="container">
+                <div class="foto">foto</div>
+                <div class="contenido"> <textarea readonly class="transparent" name="" id="" cols="65" rows="5">{$post}</textarea></div>
+            </div>
+            {/foreach}
             <div class="container">
                 <div class="foto">foto</div>
                 <div class="contenido">post aqui</div>

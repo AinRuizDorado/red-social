@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-11-08 12:53:18
+/* Smarty version 3.1.30, created on 2017-11-15 10:12:06
   from "C:\wamp\www\red-social\templates\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5a031a5e3f3743_09382634',
+  'unifunc' => 'content_5a0c2f16bd58c3_11846185',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fcef085cb50446792ced9630c5b97f86fb799a1c' => 
     array (
       0 => 'C:\\wamp\\www\\red-social\\templates\\header.tpl',
-      1 => 1510152794,
+      1 => 1510747915,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5a031a5e3f3743_09382634 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5a0c2f16bd58c3_11846185 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
+
 <html>
 <head>
 	<?php echo $_smarty_tpl->tpl_vars['css']->value;?>

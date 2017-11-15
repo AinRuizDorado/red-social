@@ -1,4 +1,6 @@
 {include file="templates/header.tpl"}
+{assign var="css" value='<LINK REL=StyleSheet HREF="css/index.css" TYPE="text/css">'}
+{include file="templates/header.tpl" css=$css}
 <div class="bg">
 	<div class="header"><img src="images/logo.png" alt="imagen logo" class="img">
 		<div class="padheader">	

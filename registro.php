@@ -8,6 +8,7 @@
 <div>
 	
 <?php
+	$db = mysqli_connect("127.0.0.1","root","","datos");
 	function mirror_user($user){
 		$json = file_get_contents('usuarios.JSON');
 		$mydata = json_decode($json,true);
@@ -24,14 +25,16 @@
 			}elseif (mirror_user($_POST['usuario'])) {
 				echo "Ese usuario ya existe";
 			}else{
-				$usuarios = file_get_contents('usuarios.JSON');
+				$query="INSERT INTO usuario (usuario,pw)" "VALUES ('".$_POST['usuario']."',".$_POST['pw'].");"
+				$res = $db->query($query);
+/* 				$usuarios = file_get_contents('usuarios.JSON');
 				$json = json_decode($usuarios, true);
 				$array = array('usuario'=> $_POST['usuario'],'pw'=> $_POST['pw']);
 				$json[] = $array;
 				$json = json_encode($json);
 				file_put_contents("usuarios.JSON", $json);
 				
-				echo"Exito, Su cuenta se creo correctamente por favor inicia sesion";
+				echo"Exito, Su cuenta se creo correctamente por favor inicia sesion"; */
 }
 ?>
 <br>
